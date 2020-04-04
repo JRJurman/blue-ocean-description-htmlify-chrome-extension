@@ -2,7 +2,9 @@
 let observer;
 observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
-    const messageElement = document.querySelector(".message");
+    const messageElement = document.querySelector(
+      ".RunDetails-Description .message"
+    );
 
     // we need to know if there's a tag character, in the text... if there isn't, don't go crazy
     const messageElementContainsTag = messageElement?.innerText?.includes("<");
