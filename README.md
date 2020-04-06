@@ -12,7 +12,8 @@ Turn Jenkins Blue Ocean Descriptions into proper HTML
 
 ### Installation
 
-You should ideally install this from the chrome store when it becomes available there... Until then...
+Install it from the chrome extension store here: https://chrome.google.com/webstore/detail/blue-ocean-description-ht/maahpenodjcdhodbonmdkfgnceddigae
+
 
 ### Local Installation
 
