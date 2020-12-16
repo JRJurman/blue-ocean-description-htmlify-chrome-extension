@@ -7,9 +7,9 @@ observer = new MutationObserver((mutations) => {
 
     // Convert any description on the **project page** from text to html
     const messageColumn = document.querySelectorAll(".JTable-cell-contents .RunMessageCell");
-    // The title is set to raw HTML as well so clean that up
+    
     messageColumn.forEach(messageCell => {
-      // Reset the cell title
+      // The title is set to raw HTML as well so clean that up
       if (messageCell.title) {
         messageCell.title = "";
       }
