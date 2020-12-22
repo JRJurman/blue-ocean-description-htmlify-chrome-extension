@@ -1,3 +1,21 @@
+/**
+ * Turns the raw HTML text rendered by an element to actual HTML if the raw text contains HTML elements
+ *
+ * @param {Element} element HTML element  
+ */
+function convertTextToHtml(element) {
+  // Presence of "<" might indicate that it might be raw HTML
+  if (element?.innerText?.includes("<")) {
+    // Test if the text is indeed HTML by using an HTML element like div
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = element.innerText;
+    // If the innerText is rendered differently, highly likely that it contains valid HTML elements
+    if (tempDiv.innerText != element.innerText) {
+      element.innerHTML = element.innerText;
+    }
+  }
+}
+
 let observer;
 observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
@@ -18,23 +36,6 @@ observer = new MutationObserver((mutations) => {
     });
   });
 });
-
-/**
- * Turns the raw HTML text rendered by an element to actual HTML if the raw text contains HTML elements
- * @param {Element} element HTML element  
- */
-function convertTextToHtml(element) {
-  // Presence of "<" might indicate that it might be raw HTML
-  if (element?.innerText?.includes("<")) {
-    // Test if the text is indeed HTML by using an HTML element like div
-    const tempDiv = document.createElement("div");
-    tempDiv.innerHTML = element.innerText;
-    // If the innerText is rendered differently, highly likely that it contains valid HTML elements
-    if (tempDiv.innerText != element.innerText) {
-      element.innerHTML = element.innerText;
-    }
-  }
-}
 
 // Define the configuration
 const config = {
