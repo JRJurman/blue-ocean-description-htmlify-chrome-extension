@@ -12,7 +12,7 @@ Turn Jenkins Blue Ocean Descriptions into proper HTML
 
 ### Installation
 
-Install it from the chrome extension store here: https://chrome.google.com/webstore/detail/blue-ocean-description-ht/maahpenodjcdhodbonmdkfgnceddigae
+Install it from [the chrome extension store](https://chrome.google.com/webstore/detail/blue-ocean-description-ht/maahpenodjcdhodbonmdkfgnceddigae)
 
 
 ### Local Installation
@@ -25,7 +25,7 @@ git clone https://github.com/JRJurman/blue-ocean-description-htmlify-chrome-exte
 
 2. Open the extensions management page for your browser, most likely [chrome://extensions/](chrome://extensions/)
 
-3. Select `Load unpacked` at the top left, and select the package folder. It should now appear in your extensions with the appropriate icon and description
+3. Select `Load unpacked` at the top left, and select the package folder. It should now appear in your extensions with the appropriate icon and description. You may have to temporarily enable `Developer Mode` to do this. 
 
 ![](./installation-preview.png)
 
