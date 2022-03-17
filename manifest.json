@@ -6,7 +6,8 @@
   "content_scripts": [
     {
       "matches": ["*://*/blue/*"],
-      "js": ["htmlify.js"]
+      "js": ["htmlify.js"],
+      "css": ["htmlify.css"]
     }
   ],
   "icons": { "128": "ship_emoji.png" }
