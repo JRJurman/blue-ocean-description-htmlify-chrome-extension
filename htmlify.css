@@ -1,0 +1,3 @@
+.RunMessageCell .RunMessageCellInner a:last-child > a, .RunMessageCell .RunMessageCellInner > span a:last-child > a {
+    display: contents;
+}

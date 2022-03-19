@@ -1,12 +1,13 @@
 {
   "name": "Blue Ocean Description HTMLify",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Turn Jenkins Blue Ocean Descriptions into proper HTML!",
   "manifest_version": 2,
   "content_scripts": [
     {
       "matches": ["*://*/blue/*"],
-      "js": ["htmlify.js"]
+      "js": ["htmlify.js"],
+      "css": ["htmlify.css"]
     }
   ],
   "icons": { "128": "ship_emoji.png" }

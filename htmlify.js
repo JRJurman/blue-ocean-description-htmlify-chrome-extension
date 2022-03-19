@@ -23,6 +23,10 @@ observer = new MutationObserver((mutations) => {
     const buildPageDescription = document.querySelector(".RunDetails-Description .message");
     convertTextToHtml(buildPageDescription);
 
+    // Convert causes on the **build page** from text to html
+    const buildCauses = document.querySelector(".RunDetailsHeader-messages .causes");
+    convertTextToHtml(buildCauses);
+
     // Convert any description on the **project page** from text to html
     const messageColumn = document.querySelectorAll(".JTable-cell-contents .RunMessageCell");
     
